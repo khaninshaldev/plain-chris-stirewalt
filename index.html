@@ -49,7 +49,7 @@
         />
       </section>
 
-      <section class="blogs-grid">
+      <section class="blogs-grid pb-10">
         <!-- BLOG 1 -->
         <article class="blog-card">
           <div class="blog-img-wrapper">
@@ -325,10 +325,117 @@
             </div>
           </section>
         </article>
+
+        <!-- BLOG 7 -->
+        <article class="blog-card hidden" id="blog-7">
+          <div class="blog-img-wrapper">
+            <img
+              src="/src/images/articles/hikvision-camera.png"
+              alt="camera"
+              class="blog-img"
+            />
+
+            <img
+              src="/src/images/icons/podcast-icon.png"
+              alt="podcast-icon"
+              class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+            />
+          </div>
+
+          <section class="blog-content">
+            <div class="blog-tag-and-date">
+              <p class="blog-tag">The Dispatch Podcast</p>
+              <p>26 May 2022</p>
+              <p class="blog-read-time">1 min 20 sec</p>
+            </div>
+
+            <h2 class="blog-heading">
+              When Public Education Becomes Parochial
+            </h2>
+
+            <p class="blog-paragraph">
+              Progressivism is not a church, but it represents a faith-like
+              ideology of moral construct and moral judgement.
+            </p>
+
+            <div class="blog-authors-group">
+              <img
+                src="/src/images/icons/lock-fill.svg"
+                alt="padlock-icon"
+                width="18px"
+                height="18px"
+              />
+              <p class="blog-authors-text">
+                Author's Name, Author's Name 2, and Author's Name 3
+              </p>
+            </div>
+          </section>
+        </article>
+
+        <!-- BLOG 8 -->
+        <article class="blog-card hidden" id="blog-8">
+          <div class="blog-img-wrapper">
+            <img
+              src="/src/images/articles/hikvision-camera.png"
+              alt="camera"
+              class="blog-img"
+            />
+
+            <img
+              src="/src/images/icons/podcast-icon.png"
+              alt="podcast-icon"
+              class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+            />
+          </div>
+
+          <section class="blog-content">
+            <div class="blog-tag-and-date">
+              <p class="blog-tag">The Dispatch Podcast</p>
+              <p>26 May 2022</p>
+              <p class="blog-read-time">1 min 20 sec</p>
+            </div>
+
+            <h2 class="blog-heading">
+              When Public Education Becomes Parochial
+            </h2>
+
+            <p class="blog-paragraph">
+              Progressivism is not a church, but it represents a faith-like
+              ideology of moral construct and moral judgement.
+            </p>
+
+            <div class="blog-authors-group">
+              <img
+                src="/src/images/icons/lock-fill.svg"
+                alt="padlock-icon"
+                width="18px"
+                height="18px"
+              />
+              <p class="blog-authors-text">
+                Author's Name, Author's Name 2, and Author's Name 3
+              </p>
+            </div>
+          </section>
+        </article>
       </section>
-      <div class="mb-4 pb-4 border-b">
-        <button class="text-small ghost-btn px-4 mt-12">LOAD MORE</button>
+      <div class="mb-4 pb-4 border-b" id="loadBtnDiv">
+        <button class="text-small ghost-btn px-4 mt-12" id="loadBtn">
+          LOAD MORE
+        </button>
       </div>
     </main>
+
+    <script defer>
+      const blog7 = document.querySelector("#blog-7");
+      const blog8 = document.querySelector("#blog-8");
+      const loadBtn = document.querySelector("#loadBtn");
+      const loadBtnDiv = document.querySelector("#loadBtnDiv");
+      loadBtn.addEventListener("click", () => {
+        blog7.classList.remove("hidden");
+        blog8.classList.remove("hidden");
+
+        loadBtnDiv.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
