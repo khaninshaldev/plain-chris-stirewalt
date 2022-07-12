@@ -20,7 +20,7 @@
   }
 
   button {
-    @apply font-bold uppercase px-[24px] py-[6px] rounded bg-blue-300 text-white hover:bg-blue-200;
+    @apply font-bold uppercase px-[24px] py-[6px] min-w-max rounded bg-blue-300 text-white hover:bg-blue-200;
   }
 }
 
