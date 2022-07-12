@@ -202,7 +202,7 @@ module.exports = {
       },
       screens: {
         "2xl": "1440px",
-        "3xl": "1536px",
+        "3xl": "1600px",
         wrap: "1250px",
       },
       gridTemplateColumns: {
