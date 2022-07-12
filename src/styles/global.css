@@ -28,7 +28,7 @@
 
 @layer components {
   .container {
-    @apply max-w-[120rem] mx-auto w-[90%] 2xl:w-[75%];
+    @apply max-w-[120rem] mx-auto w-[90%] 3xl:w-[85%];
   }
 
   .ghost-btn {

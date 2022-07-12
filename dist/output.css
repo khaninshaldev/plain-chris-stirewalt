@@ -823,9 +823,9 @@ button:hover{
   max-width: 120rem;
 }
 
-@media (min-width: 1440px){
+@media (min-width: 1536px){
   .container{
-    width: 75%;
+    width: 85%;
   }
 }
 
@@ -1079,6 +1079,14 @@ button:hover{
   align-items: center;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
 .gap-4{
   gap: 1rem;
 }
@@ -1119,12 +1127,35 @@ button:hover{
   border-bottom-width: 1px;
 }
 
+.border-l{
+  border-left-width: 1px;
+}
+
+.border-r{
+  border-right-width: 1px;
+}
+
 .border-b-2{
   border-bottom-width: 2px;
 }
 
 .border-transparent{
   border-color: transparent;
+}
+
+.border-b-brand-iron-grey{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(203 212 225 / var(--tw-border-opacity));
+}
+
+.border-l-brand-iron-grey{
+  --tw-border-opacity: 1;
+  border-left-color: rgb(203 212 225 / var(--tw-border-opacity));
+}
+
+.border-r-brand-iron-grey{
+  --tw-border-opacity: 1;
+  border-right-color: rgb(203 212 225 / var(--tw-border-opacity));
 }
 
 .bg-black{
@@ -1137,13 +1168,12 @@ button:hover{
   background-color: rgb(196 196 196 / var(--tw-bg-opacity));
 }
 
-.p-2{
-  padding: 0.5rem;
+.p-5{
+  padding: 1.25rem;
 }
 
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.p-2{
+  padding: 0.5rem;
 }
 
 .px-1{
@@ -1185,6 +1215,10 @@ button:hover{
   padding-bottom: 1rem;
 }
 
+.pt-6{
+  padding-top: 1.5rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1192,6 +1226,11 @@ button:hover{
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-lg{
@@ -1283,6 +1322,12 @@ button:hover{
   --tw-ring-offset-width: 2px;
 }
 
+@media (min-width: 375px){
+  .sm\:text-\[14px\]{
+    font-size: 14px;
+  }
+}
+
 @media (min-width: 768px){
   .md\:order-1{
     order: 1;
@@ -1318,5 +1363,16 @@ button:hover{
 
   .md\:text-left{
     text-align: left;
+  }
+
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1080px){
+  .lg\:max-w-\[60em\]{
+    max-width: 60em;
   }
 }
