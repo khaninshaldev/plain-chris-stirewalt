@@ -8,7 +8,7 @@ module.exports = {
     "./page-templates/**/*.php",
     "./*.php",
     "./source/**/*.js",
-    "./src/**/*.html",
+    "./**/*.html",
   ],
   theme: {
     colors: {
