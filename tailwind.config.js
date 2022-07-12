@@ -15,7 +15,7 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       black: "#111111",
-      white: "#F7F7F7",
+      white: "#FFFFFF",
       red: {
         100: "#FFB4B4",
         200: "#CA533B",
@@ -83,6 +83,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        open: ["Open Sans", "sans-serif"],
         minion: ["MinionPro", "Helvetica", "Arial", "sans-serif"],
         lato: ["Lato", "Helvetica", "Verdana", "Tahoma", "sans-serif"],
         "lato-bold": [

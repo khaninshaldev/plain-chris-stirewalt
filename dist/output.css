@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 /*
 ! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
@@ -594,14 +594,14 @@ select{
   outline: 1px auto -webkit-focus-ring-color;
 }
 
-h1,
-  h2,
-  p {
-  font-family: "Montserrat", sans-serif;
+html{
+  font-family: Open Sans, sans-serif;
+  font-weight: 400;
 }
 
-button {
-  font-family: "Lato", sans-serif;
+button{
+  font-family: Lato, Helvetica, Verdana, Tahoma, sans-serif;
+  font-weight: 700;
 }
 
 h1, 
@@ -621,7 +621,7 @@ button{
   font-weight: 700;
   text-transform: uppercase;
   --tw-text-opacity: 1;
-  color: rgb(247 247 247 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 button:hover{
@@ -842,6 +842,17 @@ button:hover{
   background-color: rgb(203 212 225 / var(--tw-bg-opacity));
 }
 
+.text-small{
+  font-size: 14px;
+}
+
+@media (min-width: 768px){
+  .text-small{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 /* BLOG ARTICLE COMPONENTS */
 
 .blogs-grid{
@@ -917,10 +928,22 @@ button:hover{
   }
 }
 
+.blog-paragraph{
+  font-size: 14px;
+}
+
+@media (min-width: 768px){
+  .blog-paragraph{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 .blog-tag-and-date{
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-family: Lato, Helvetica, Verdana, Tahoma, sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
 }
@@ -928,9 +951,13 @@ button:hover{
 .blog-tag{
   --tw-bg-opacity: 1;
   background-color: rgb(148 41 19 / var(--tw-bg-opacity));
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(247 247 247 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .blog-read-time{
@@ -949,6 +976,7 @@ button:hover{
 }
 
 .blog-authors-text{
+  font-family: Lato, Helvetica, Verdana, Tahoma, sans-serif;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 700;
@@ -1239,8 +1267,8 @@ button:hover{
   line-height: 2rem;
 }
 
-.text-\[14px\]{
-  font-size: 14px;
+.font-light{
+  font-weight: 300;
 }
 
 .font-bold{
@@ -1249,7 +1277,7 @@ button:hover{
 
 .text-white{
   --tw-text-opacity: 1;
-  color: rgb(247 247 247 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-black{
@@ -1284,7 +1312,7 @@ button:hover{
 
 .focus\:bg-white:focus{
   --tw-bg-opacity: 1;
-  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .focus\:ring:focus{
@@ -1322,12 +1350,6 @@ button:hover{
   --tw-ring-offset-width: 2px;
 }
 
-@media (min-width: 375px){
-  .sm\:text-\[14px\]{
-    font-size: 14px;
-  }
-}
-
 @media (min-width: 768px){
   .md\:order-1{
     order: 1;
@@ -1363,11 +1385,6 @@ button:hover{
 
   .md\:text-left{
     text-align: left;
-  }
-
-  .md\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 
