@@ -8,305 +8,709 @@
   </head>
 
   <body>
-    <header class="mb-4 border-b border-b-brand-iron-grey">
+    <header class="border-b border-b-brand-iron-grey">
       <section
         class="p-5 container flex border-l border-l-brand-iron-grey border-r border-r-brand-iron-grey"
       >
-        <nav>
-          <button class="ghost-btn px-1 flex items-center gap-4">
+        <nav class="flex gap-6">
+          <button class="text-small ghost-btn px-1 flex items-center gap-4">
             <img src="/src/images/icons/menu-line.svg" alt="menu-icon" />
             Menu
           </button>
-        </nav>
 
-        <button class="ml-auto mr-2">Join</button>
-        <button class="ghost-btn">Sign In</button>
+          <img
+            src="src/images/icons/search-line.svg"
+            alt="search-icon"
+            class="cursor-pointer"
+          />
+        </nav>
       </section>
     </header>
+
     <main class="container flex flex-col items-center">
-      <section class="flex flex-col items-center md:flex-row md:gap-10">
-        <h1 class="text-5xl mb-2 md:mb-0">Articles</h1>
+      <section class="pt-6 w-full flex flex-col justify-between">
+        <h1 class="text-5xl mb-4">Articles</h1>
+
+        <section class="flex w-full items-center">
+          <p><i>Article</i>/The G-File</p>
+
+          <div class="ml-auto flex items-center gap-4">
+            <img
+              src="src/images/icons/search-line.svg"
+              alt="search-icon"
+              class="cursor-pointer"
+            />
+
+            <button class="text-small ghost-btn px-1 flex items-center gap-4">
+              <img src="/src/images/icons/sort-icon.svg" alt="menu-icon" />
+              Sort
+            </button>
+            <button class="text-small ghost-btn px-1 flex items-center gap-4">
+              <img src="/src/images/icons/filter-3-line.svg" alt="menu-icon" />
+              Filter
+            </button>
+          </div>
+        </section>
       </section>
 
-      <section class="blogs-grid">
-        <!-- BLOG 1 -->
-        <article class="blog-card">
-          <div class="blog-img-wrapper">
-            <img
-              src="/src/images/articles/hikvision-camera.png"
-              alt="camera"
-              class="blog-img"
-            />
+      <section class="featured-blogs-grid w-full">
+        <section class="blogs-column-one">
+          <!--
+            *******
+            ROW ONE
+            *******
+          -->
 
-            <img
-              src="/src/images/icons/podcast-icon.png"
-              alt="podcast-icon"
-              class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
-            />
-          </div>
-
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The G-File</p>
-              <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
-            </div>
-
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
-
-            <p class="blog-paragraph">
-              Progressivism is not a church, but it represents a faith-like
-              ideology of moral construct and moral judgement.
-            </p>
-
-            <div class="blog-authors-group">
+          <!-- BLOG 1 -->
+          <article class="featured-card">
+            <div class="featured-img-wrapper">
               <img
-                src="/src/images/icons/lock-fill.svg"
-                alt="padlock-icon"
-                width="18px"
-                height="18px"
+                src="/src/images/articles/arrest-the-traitors-large.png"
+                alt="camera"
+                class="blog-img"
               />
-              <p class="blog-authors-text">
-                Author's Name, Author's Name 2, and Author's Name 3
+
+              <!-- <img
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+              /> -->
+            </div>
+
+            <section class="featured-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                Skilled Workers Are Fleeing Russia. Let’s Welcome Them.
+              </h2>
+
+              <p class="blog-paragraph">
+                Depriving Russia—and Belarus—of such workers would strike a blow
+                against our adversaries and strengthen our economy.
               </p>
-            </div>
-          </section>
-        </article>
 
-        <!-- BLOG 2 -->
-        <article class="blog-card">
-          <div class="blog-img-wrapper">
-            <img
-              src="/src/images/articles/hikvision-camera.png"
-              alt="camera"
-              class="blog-img"
-            />
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">Author's Name</p>
+              </div>
+            </section>
+          </article>
 
-            <img
-              src="/src/images/icons/podcast-icon.png"
-              alt="podcast-icon"
-              class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
-            />
-          </div>
-
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The G-File</p>
-              <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
-            </div>
-
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
-
-            <p class="blog-paragraph">
-              Progressivism is not a church, but it represents a faith-like
-              ideology of moral construct and moral judgement.
-            </p>
-
-            <div class="blog-authors-group">
+          <!-- BLOG 2 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
               <img
-                src="/src/images/icons/lock-fill.svg"
-                alt="padlock-icon"
-                width="18px"
-                height="18px"
+                src="/src/images/articles/hikvision-camera.png"
+                alt="camera"
+                class="blog-img"
               />
-              <p class="blog-authors-text">
-                Author's Name, Author's Name 2, and Author's Name 3
-              </p>
-            </div>
-          </section>
-        </article>
 
-        <!-- BLOG 3 -->
-        <article class="blog-card">
-          <div class="blog-img-wrapper">
-            <img
-              src="/src/images/articles/arrest-the-traitors.png"
-              alt="camera"
-              class="blog-img"
-            />
-
-            <img
-              src="/src/images/icons/podcast-icon.png"
-              alt="podcast-icon"
-              class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
-            />
-          </div>
-
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The G-File</p>
-              <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
-            </div>
-
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
-
-            <p class="blog-paragraph">
-              Progressivism is not a church, but it represents a faith-like
-              ideology of moral construct and moral judgement.
-            </p>
-
-            <div class="blog-authors-group">
               <img
-                src="/src/images/icons/lock-fill.svg"
-                alt="padlock-icon"
-                width="18px"
-                height="18px"
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               />
-              <p class="blog-authors-text">
-                Author's Name, Author's Name 2, and Author's Name 3
+            </div>
+
+            <section class="blog-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                When Public Education Becomes Parochial
+              </h2>
+
+              <p class="blog-paragraph">
+                Progressivism is not a church, but it represents a faith-like
+                ideology of moral construct and moral judgement.
               </p>
-            </div>
-          </section>
-        </article>
 
-        <!-- BLOG 4 -->
-        <article class="blog-card">
-          <div class="blog-img-wrapper">
-            <img
-              src="/src/images/articles/arrest-the-traitors.png"
-              alt="camera"
-              class="blog-img"
-            />
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">
+                  Author's Name, Author's Name 2, and Author's Name 3
+                </p>
+              </div>
+            </section>
+          </article>
 
-            <img
-              src="/src/images/icons/podcast-icon.png"
-              alt="podcast-icon"
-              class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
-            />
-          </div>
-
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The G-File</p>
-              <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
-            </div>
-
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
-
-            <p class="blog-paragraph">
-              Progressivism is not a church, but it represents a faith-like
-              ideology of moral construct and moral judgement.
-            </p>
-
-            <div class="blog-authors-group">
+          <!-- BLOG 3 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
               <img
-                src="/src/images/icons/lock-fill.svg"
-                alt="padlock-icon"
-                width="18px"
-                height="18px"
+                src="/src/images/articles/hikvision-camera.png"
+                alt="camera"
+                class="blog-img"
               />
-              <p class="blog-authors-text">
-                Author's Name, Author's Name 2, and Author's Name 3
+
+              <!-- <img
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+              /> -->
+            </div>
+
+            <section class="blog-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                When Public Education Becomes Parochial
+              </h2>
+
+              <p class="blog-paragraph">
+                Progressivism is not a church, but it represents a faith-like
+                ideology of moral construct and moral judgement.
               </p>
-            </div>
-          </section>
-        </article>
 
-        <!-- BLOG 5 -->
-        <article class="blog-card">
-          <div class="blog-img-wrapper">
-            <img
-              src="/src/images/articles/health-care.png"
-              alt="camera"
-              class="blog-img"
-            />
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">
+                  Author's Name, Author's Name 2, and Author's Name 3
+                </p>
+              </div>
+            </section>
+          </article>
 
-            <img
-              src="/src/images/icons/podcast-icon.png"
-              alt="podcast-icon"
-              class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
-            />
-          </div>
-
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The G-File</p>
-              <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
-            </div>
-
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
-
-            <p class="blog-paragraph">
-              Progressivism is not a church, but it represents a faith-like
-              ideology of moral construct and moral judgement.
-            </p>
-
-            <div class="blog-authors-group">
+          <!--
+            *******
+            ROW TWO
+            ********
+          -->
+          <!-- BLOG 4 -->
+          <article class="featured-card">
+            <div class="featured-img-wrapper">
               <img
-                src="/src/images/icons/lock-fill.svg"
-                alt="padlock-icon"
-                width="18px"
-                height="18px"
+                src="/src/images/articles/arrest-the-traitors-large.png"
+                alt="camera"
+                class="blog-img"
               />
-              <p class="blog-authors-text">
-                Author's Name, Author's Name 2, and Author's Name 3
-              </p>
-            </div>
-          </section>
-        </article>
 
-        <!-- BLOG 6 -->
-        <article class="blog-card">
-          <div class="blog-img-wrapper">
-            <img
-              src="/src/images/articles/health-care.png"
-              alt="camera"
-              class="blog-img"
-            />
-
-            <img
-              src="/src/images/icons/podcast-icon.png"
-              alt="podcast-icon"
-              class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
-            />
-          </div>
-
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The G-File</p>
-              <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
-            </div>
-
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
-
-            <p class="blog-paragraph">
-              Progressivism is not a church, but it represents a faith-like
-              ideology of moral construct and moral judgement.
-            </p>
-
-            <div class="blog-authors-group">
               <img
-                src="/src/images/icons/lock-fill.svg"
-                alt="padlock-icon"
-                width="18px"
-                height="18px"
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               />
-              <p class="blog-authors-text">
-                Author's Name, Author's Name 2, and Author's Name 3
-              </p>
             </div>
-          </section>
-        </article>
+
+            <section class="featured-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                Skilled Workers Are Fleeing Russia. Let’s Welcome Them.
+              </h2>
+
+              <p class="blog-paragraph">
+                Depriving Russia—and Belarus—of such workers would strike a blow
+                against our adversaries and strengthen our economy.
+              </p>
+
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">Author's Name</p>
+              </div>
+            </section>
+          </article>
+
+          <!-- BLOG 5 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img
+                src="/src/images/articles/hikvision-camera.png"
+                alt="camera"
+                class="blog-img"
+              />
+
+              <img
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+              />
+            </div>
+
+            <section class="blog-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                When Public Education Becomes Parochial
+              </h2>
+
+              <p class="blog-paragraph">
+                Progressivism is not a church, but it represents a faith-like
+                ideology of moral construct and moral judgement.
+              </p>
+
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">
+                  Author's Name, Author's Name 2, and Author's Name 3
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <!-- BLOG 6 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img
+                src="/src/images/articles/hikvision-camera.png"
+                alt="camera"
+                class="blog-img"
+              />
+
+              <img
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+              />
+            </div>
+
+            <section class="blog-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                When Public Education Becomes Parochial
+              </h2>
+
+              <p class="blog-paragraph">
+                Progressivism is not a church, but it represents a faith-like
+                ideology of moral construct and moral judgement.
+              </p>
+
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">
+                  Author's Name, Author's Name 2, and Author's Name 3
+                </p>
+              </div>
+            </section>
+          </article>
+        </section>
+
+        <section class="blog-column-two">
+          <!-- BLOG 1 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img
+                src="/src/images/articles/hikvision-camera.png"
+                alt="camera"
+                class="blog-img"
+              />
+
+              <!-- <img
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+              /> -->
+            </div>
+
+            <section class="blog-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                When Public Education Becomes Parochial
+              </h2>
+
+              <p class="blog-paragraph">
+                Progressivism is not a church, but it represents a faith-like
+                ideology of moral construct and moral judgement.
+              </p>
+
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">
+                  Author's Name, Author's Name 2, and Author's Name 3
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <!-- BLOG 2 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img
+                src="/src/images/articles/horse-race.png"
+                alt="camera"
+                class="blog-img"
+              />
+
+              <!-- <img
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+              /> -->
+            </div>
+
+            <section class="blog-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                When Public Education Becomes Parochial
+              </h2>
+
+              <p class="blog-paragraph">
+                Progressivism is not a church, but it represents a faith-like
+                ideology of moral construct and moral judgement.
+              </p>
+
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">
+                  Author's Name, Author's Name 2, and Author's Name 3
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <!-- BLOG 3 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img
+                src="/src/images/articles/health-care.png"
+                alt="camera"
+                class="blog-img"
+              />
+
+              <!-- <img
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+              /> -->
+            </div>
+
+            <section class="blog-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                When Public Education Becomes Parochial
+              </h2>
+
+              <p class="blog-paragraph">
+                Progressivism is not a church, but it represents a faith-like
+                ideology of moral construct and moral judgement.
+              </p>
+
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">
+                  Author's Name, Author's Name 2, and Author's Name 3
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <!-- BLOG 4 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img
+                src="/src/images/articles/arrest-the-traitors.png"
+                alt="camera"
+                class="blog-img"
+              />
+
+              <!-- <img
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+              /> -->
+            </div>
+
+            <section class="blog-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                When Public Education Becomes Parochial
+              </h2>
+
+              <p class="blog-paragraph">
+                Progressivism is not a church, but it represents a faith-like
+                ideology of moral construct and moral judgement.
+              </p>
+
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">
+                  Author's Name, Author's Name 2, and Author's Name 3
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <!-- BLOG 5 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img
+                src="/src/images/articles/hikvision-camera.png"
+                alt="camera"
+                class="blog-img"
+              />
+
+              <!-- <img
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+              /> -->
+            </div>
+
+            <section class="blog-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                When Public Education Becomes Parochial
+              </h2>
+
+              <p class="blog-paragraph">
+                Progressivism is not a church, but it represents a faith-like
+                ideology of moral construct and moral judgement.
+              </p>
+
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">
+                  Author's Name, Author's Name 2, and Author's Name 3
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <!-- BLOG 6 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img
+                src="/src/images/articles/horse-race.png"
+                alt="camera"
+                class="blog-img"
+              />
+
+              <!-- <img
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+              /> -->
+            </div>
+
+            <section class="blog-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                When Public Education Becomes Parochial
+              </h2>
+
+              <p class="blog-paragraph">
+                Progressivism is not a church, but it represents a faith-like
+                ideology of moral construct and moral judgement.
+              </p>
+
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">
+                  Author's Name, Author's Name 2, and Author's Name 3
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <!-- BLOG 7 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img
+                src="/src/images/articles/health-care.png"
+                alt="camera"
+                class="blog-img"
+              />
+
+              <!-- <img
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+              /> -->
+            </div>
+
+            <section class="blog-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                When Public Education Becomes Parochial
+              </h2>
+
+              <p class="blog-paragraph">
+                Progressivism is not a church, but it represents a faith-like
+                ideology of moral construct and moral judgement.
+              </p>
+
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">
+                  Author's Name, Author's Name 2, and Author's Name 3
+                </p>
+              </div>
+            </section>
+          </article>
+
+          <!-- BLOG 8 -->
+          <article class="blog-card">
+            <div class="blog-img-wrapper">
+              <img
+                src="/src/images/articles/arrest-the-traitors.png"
+                alt="camera"
+                class="blog-img"
+              />
+
+              <!-- <img
+                src="/src/images/icons/podcast-icon.png"
+                alt="podcast-icon"
+                class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
+              /> -->
+            </div>
+
+            <section class="blog-content">
+              <div class="blog-tag-and-date">
+                <p class="blog-tag">The G-File</p>
+                <p>26 May 2022</p>
+                <p class="blog-read-time">1 min 20 sec</p>
+              </div>
+
+              <h2 class="blog-heading">
+                When Public Education Becomes Parochial
+              </h2>
+
+              <p class="blog-paragraph">
+                Progressivism is not a church, but it represents a faith-like
+                ideology of moral construct and moral judgement.
+              </p>
+
+              <div class="blog-authors-group">
+                <img
+                  src="/src/images/icons/lock-fill.svg"
+                  alt="padlock-icon"
+                  width="18px"
+                  height="18px"
+                />
+                <p class="blog-authors-text">
+                  Author's Name, Author's Name 2, and Author's Name 3
+                </p>
+              </div>
+            </section>
+          </article>
+        </section>
       </section>
       <div class="mb-4 pb-4 border-b">
-        <button class="ghost-btn px-4 mt-12">LOAD MORE</button>
+        <button class="text-small ghost-btn px-4 mt-12">LOAD MORE</button>
       </div>
     </main>
   </body>
