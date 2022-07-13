@@ -856,6 +856,11 @@ button:hover{
   order: 1;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -864,11 +869,6 @@ button:hover{
 .my-14{
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
-}
-
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .ml-auto{
@@ -975,12 +975,12 @@ button:hover{
   width: 100%;
 }
 
-.w-5{
-  width: 1.25rem;
-}
-
 .w-\[1248px\]{
   width: 1248px;
+}
+
+.w-5{
+  width: 1.25rem;
 }
 
 .w-\[28px\]{
@@ -1240,14 +1240,14 @@ button:hover{
   padding-right: 0.5rem;
 }
 
-.py-14{
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-14{
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .px-0{
@@ -1377,11 +1377,6 @@ button:hover{
 
 .text-lg{
   font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
