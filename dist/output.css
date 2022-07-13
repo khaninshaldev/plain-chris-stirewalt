@@ -830,20 +830,6 @@ button:hover{
 
 /* BLOG ARTICLE COMPONENTS */
 
-.blogs-grid{
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1rem;
-  border-top-width: 1px;
-}
-
-@media (min-width: 1440px){
-  .blogs-grid{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 .blog-card{
   margin-top: 1rem;
   display: flex;
@@ -861,20 +847,6 @@ button:hover{
 }
 
 /* FEATURED ARTICLE ONLY-OVERWRITTEN-COMPONENTS */
-
-.featured-blogs-grid{
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 1.25rem;
-  border-top-width: 1px;
-}
-
-@media (min-width: 1340px){
-  .featured-blogs-grid{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
 
 .featured-card{
   margin-top: 1rem;
@@ -1001,8 +973,8 @@ button:hover{
   display: none;
 }
 
-.h-2{
-  height: 0.5rem;
+.h-5{
+  height: 1.25rem;
 }
 
 .h-full{
@@ -1013,44 +985,12 @@ button:hover{
   height: 6rem;
 }
 
-.h-8{
-  height: 2rem;
-}
-
-.h-6{
-  height: 1.5rem;
-}
-
-.h-5{
-  height: 1.25rem;
-}
-
-.h-4{
-  height: 1rem;
-}
-
 .w-full{
   width: 100%;
 }
 
-.w-2{
-  width: 0.5rem;
-}
-
-.w-8{
-  width: 2rem;
-}
-
-.w-6{
-  width: 1.5rem;
-}
-
 .w-5{
   width: 1.25rem;
-}
-
-.w-4{
-  width: 1rem;
 }
 
 .max-w-xl{
@@ -1111,6 +1051,10 @@ button:hover{
 
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
@@ -1470,22 +1414,14 @@ button:hover{
     height: 1.5rem;
   }
 
-  .md\:h-7{
-    height: 1.75rem;
+  .md\:w-6{
+    width: 1.5rem;
   }
 
   .md\:w-fit{
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-  }
-
-  .md\:w-6{
-    width: 1.5rem;
-  }
-
-  .md\:w-7{
-    width: 1.75rem;
   }
 
   .md\:max-w-4xl{
@@ -1556,6 +1492,12 @@ button:hover{
   }
 }
 
+@media (min-width: 1340px){
+  .xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 1440px){
   .\32xl\:w-full{
     width: 100%;
@@ -1563,5 +1505,9 @@ button:hover{
 
   .\32xl\:max-w-228{
     max-width: 228px;
+  }
+
+  .\32xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

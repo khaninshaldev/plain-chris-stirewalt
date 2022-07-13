@@ -27,19 +27,11 @@
 
   /* BLOG ARTICLE COMPONENTS */
 
-  .blogs-grid {
-    @apply mt-4 border-t grid grid-cols-1 gap-4 2xl:grid-cols-2;
-  }
-
   .blog-card {
     @apply flex flex-col border-b border-b-gray-100 mt-4 pb-4 md:flex-row;
   }
 
   /* FEATURED ARTICLE ONLY-OVERWRITTEN-COMPONENTS */
-
-  .featured-blogs-grid {
-    @apply mt-4 border-t grid grid-cols-1 gap-5 xl:grid-cols-2;
-  }
 
   .featured-card {
     @apply flex flex-col border-b border-b-gray-100 mt-4 pb-4;
