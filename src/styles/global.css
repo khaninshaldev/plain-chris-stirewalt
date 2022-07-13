@@ -24,16 +24,4 @@
   .container {
     @apply max-w-[120rem] mx-auto w-[90%] 3xl:w-[85%];
   }
-
-  /* BLOG ARTICLE COMPONENTS */
-
-  .blog-card {
-    @apply flex flex-col border-b border-b-gray-100 mt-4 pb-4 md:flex-row;
-  }
-
-  /* FEATURED ARTICLE ONLY-OVERWRITTEN-COMPONENTS */
-
-  .featured-card {
-    @apply flex flex-col border-b border-b-gray-100 mt-4 pb-4;
-  }
 }
