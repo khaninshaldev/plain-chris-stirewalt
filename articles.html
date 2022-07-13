@@ -35,12 +35,9 @@
       <section class="pt-6 w-full flex flex-col justify-between">
         <h1 class="text-5xl mb-4">Articles</h1>
 
-        <div class="w-full flex gap-4">
+        <section class="w-full flex flex-col gap-4">
           <form class="w-full flex">
-            <input
-              value="Article/The G-File"
-              class="mr-4 p-2 border rounded w-full hover:border-blue-100"
-            />
+            <input value="Article/The G-File" class="mr-4 p-2 w-full" />
             <button type="submit" class="hover:bg-transparent px-0">
               <img
                 src="src/images/icons/search-line.svg"
@@ -52,19 +49,21 @@
             </button>
           </form>
 
-          <button
-            class="text-[14px] md:text-base bg-transparent px-2 text-blue-300 hover:bg-brand-iron-grey flex items-center gap-4"
-          >
-            <img src="./src/images/icons/sort-icon.svg" alt="menu-icon" />
-            Sort
-          </button>
-          <button
-            class="text-[14px] md:text-base bg-transparent px-2 text-blue-300 hover:bg-brand-iron-grey flex items-center gap-4"
-          >
-            <img src="./src/images/icons/filter-3-line.svg" alt="menu-icon" />
-            Filter
-          </button>
-        </div>
+          <div class="w-full flex">
+            <button
+              class="w-full text-[14px] md:text-base bg-transparent px-2 text-blue-300 hover:bg-brand-iron-grey flex justify-center items-center gap-4"
+            >
+              <img src="./src/images/icons/sort-icon.svg" alt="menu-icon" />
+              Sort
+            </button>
+            <button
+              class="w-full text-[14px] md:text-base bg-transparent px-2 text-blue-300 hover:bg-brand-iron-grey flex justify-center items-center gap-4"
+            >
+              <img src="./src/images/icons/filter-3-line.svg" alt="menu-icon" />
+              Filter
+            </button>
+          </div>
+        </section>
       </section>
 
       <section class="featured-blogs-grid w-full">

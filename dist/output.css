@@ -599,11 +599,6 @@ html{
   font-weight: 400;
 }
 
-button{
-  font-family: Lato, Helvetica, Verdana, Tahoma, sans-serif;
-  font-weight: 700;
-}
-
 h1, 
   h2, 
   h3{
@@ -621,6 +616,7 @@ button{
   padding-right: 24px;
   padding-top: 6px;
   padding-bottom: 6px;
+  font-family: Lato, Helvetica, Verdana, Tahoma, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   --tw-text-opacity: 1;
@@ -1029,6 +1025,10 @@ button:hover{
   max-width: 56rem;
 }
 
+.flex-1{
+  flex: 1 1 0%;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -1055,6 +1055,10 @@ button:hover{
 
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -1180,14 +1184,14 @@ button:hover{
   padding: 0.5rem;
 }
 
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .py-14{
@@ -1198,6 +1202,11 @@ button:hover{
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .py-4{
@@ -1233,11 +1242,6 @@ button:hover{
 .px-0\.5{
   padding-left: 0.125rem;
   padding-right: 0.125rem;
-}
-
-.px-0{
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .pb-1{
@@ -1364,6 +1368,16 @@ button:hover{
   background-color: transparent;
 }
 
+.hover\:text-blue-100:hover{
+  --tw-text-opacity: 1;
+  color: rgb(178 202 225 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-300:hover{
+  --tw-text-opacity: 1;
+  color: rgb(43 71 114 / var(--tw-text-opacity));
+}
+
 .focus\:border-black:focus{
   --tw-border-opacity: 1;
   border-color: rgb(17 17 17 / var(--tw-border-opacity));
@@ -1440,6 +1454,10 @@ button:hover{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-\[3fr_1fr\]{
+    grid-template-columns: 3fr 1fr;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1468,8 +1486,37 @@ button:hover{
 }
 
 @media (min-width: 1080px){
+  .lg\:order-2{
+    order: 2;
+  }
+
+  .lg\:order-1{
+    order: 1;
+  }
+
+  .lg\:order-3{
+    order: 3;
+  }
+
+  .lg\:-order-none{
+    order: 0;
+  }
+
+  .lg\:order-none{
+    order: 0;
+  }
+
   .lg\:max-w-\[60em\]{
     max-width: 60em;
+  }
+
+  .lg\:grid-cols-\[3fr_1fr\]{
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:text-6xl{

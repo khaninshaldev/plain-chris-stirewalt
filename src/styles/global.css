@@ -9,10 +9,6 @@
     @apply font-open font-normal;
   }
 
-  button {
-    @apply font-lato font-bold;
-  }
-
   h1,
   h2,
   h3 {
@@ -20,7 +16,7 @@
   }
 
   button {
-    @apply font-bold uppercase px-[24px] py-[6px] min-w-max rounded bg-blue-300 text-white hover:bg-blue-200;
+    @apply font-lato font-bold uppercase px-[24px] py-[6px] min-w-max rounded bg-blue-300 text-white hover:bg-blue-200;
   }
 }
 
