@@ -9,6 +9,7 @@ module.exports = {
     "./*.php",
     "./source/**/*.js",
     "./**/*.html",
+    "./src/**/*.html",
   ],
   theme: {
     colors: {

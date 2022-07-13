@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Chris Stirewalt</title>
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="./dist/output.css" type="text/css" rel="stylesheet" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -13,14 +13,20 @@
         class="p-5 container flex border-l border-l-brand-iron-grey border-r border-r-brand-iron-grey"
       >
         <nav>
-          <button class="text-small ghost-btn px-1 flex items-center gap-4">
-            <img src="/src/images/icons/menu-line.svg" alt="menu-icon" />
+          <button
+            class="text-[14px] md:text-base bg-transparent px-2 text-blue-300 hover:bg-brand-iron-grey px-1 flex items-center gap-4"
+          >
+            <img src="./src/images/icons/menu-line.svg" alt="menu-icon" />
             Menu
           </button>
         </nav>
 
-        <button class="text-small ml-auto mr-2">Join</button>
-        <button class="text-small ghost-btn">Sign In</button>
+        <button class="text-[14px] md:text-base ml-auto mr-2">Join</button>
+        <button
+          class="text-[14px] md:text-base bg-transparent px-2 text-blue-300 hover:bg-brand-iron-grey"
+        >
+          Sign In
+        </button>
       </section>
     </header>
 
@@ -32,7 +38,7 @@
           <h1 class="text-4xl text-center mb-4 md:text-left">
             Chris Stirewalt
           </h1>
-          <p class="text-small font-light lg:max-w-[60em]">
+          <p class="text-[14px] md:text-base font-light lg:max-w-[60em]">
             Chris Stirewalt is a contributing editor of The Dispatch and senior
             fellow at the American Enterprise Institute. Read his weekly column
             here on Mondays and his politics newsletter, Stirewaltisms, on
@@ -41,7 +47,7 @@
         </section>
 
         <img
-          src="/src/images/chris-stirewalt.png"
+          src="./src/images/chris-stirewalt.png"
           alt="Mr. Chris Stirewalt"
           width="155"
           height="165"
@@ -52,44 +58,44 @@
       <section class="blogs-grid pb-10">
         <!-- BLOG 1 -->
         <article class="blog-card">
-          <div class="blog-img-wrapper">
+          <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
             <img
-              src="/src/images/articles/hikvision-camera.png"
+              src="./src/images/articles/hikvision-camera.png"
               alt="camera"
-              class="blog-img"
+              class="w-full h-full object-cover"
             />
 
             <img
-              src="/src/images/icons/podcast-icon.png"
+              src="./src/images/icons/podcast-icon.png"
               alt="podcast-icon"
               class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
             />
           </div>
 
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The Dispatch Podcast</p>
+          <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+            <div class="flex items-center gap-4 text-xs font-lato">
+              <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                The Dispatch Podcast
+              </p>
               <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
+              <p class="pl-4 border-l">1 min 20 sec</p>
             </div>
 
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
+            <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-            <p class="blog-paragraph">
+            <p class="text-[14px] md:text-base">
               Progressivism is not a church, but it represents a faith-like
               ideology of moral construct and moral judgement.
             </p>
 
-            <div class="blog-authors-group">
+            <div class="flex gap-3">
               <img
-                src="/src/images/icons/lock-fill.svg"
+                src="./src/images/icons/lock-fill.svg"
                 alt="padlock-icon"
                 width="18px"
                 height="18px"
               />
-              <p class="blog-authors-text">
+              <p class="font-bold text-sm font-lato">
                 Author's Name, Author's Name 2, and Author's Name 3
               </p>
             </div>
@@ -98,44 +104,44 @@
 
         <!-- BLOG 2 -->
         <article class="blog-card">
-          <div class="blog-img-wrapper">
+          <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
             <img
-              src="/src/images/articles/hikvision-camera.png"
+              src="./src/images/articles/hikvision-camera.png"
               alt="camera"
-              class="blog-img"
+              class="w-full h-full object-cover"
             />
 
             <img
-              src="/src/images/icons/podcast-icon.png"
+              src="./src/images/icons/podcast-icon.png"
               alt="podcast-icon"
               class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
             />
           </div>
 
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The Dispatch Podcast</p>
+          <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+            <div class="flex items-center gap-4 text-xs font-lato">
+              <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                The Dispatch Podcast
+              </p>
               <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
+              <p class="pl-4 border-l">1 min 20 sec</p>
             </div>
 
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
+            <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-            <p class="blog-paragraph">
+            <p class="text-[14px] md:text-base">
               Progressivism is not a church, but it represents a faith-like
               ideology of moral construct and moral judgement.
             </p>
 
-            <div class="blog-authors-group">
+            <div class="flex gap-3">
               <img
-                src="/src/images/icons/lock-fill.svg"
+                src="./src/images/icons/lock-fill.svg"
                 alt="padlock-icon"
                 width="18px"
                 height="18px"
               />
-              <p class="blog-authors-text">
+              <p class="font-bold text-sm font-lato">
                 Author's Name, Author's Name 2, and Author's Name 3
               </p>
             </div>
@@ -144,44 +150,44 @@
 
         <!-- BLOG 3 -->
         <article class="blog-card">
-          <div class="blog-img-wrapper">
+          <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
             <img
-              src="/src/images/articles/arrest-the-traitors.png"
+              src="./src/images/articles/arrest-the-traitors.png"
               alt="camera"
-              class="blog-img"
+              class="w-full h-full object-cover"
             />
 
             <img
-              src="/src/images/icons/podcast-icon.png"
+              src="./src/images/icons/podcast-icon.png"
               alt="podcast-icon"
               class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
             />
           </div>
 
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The Remnant</p>
+          <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+            <div class="flex items-center gap-4 text-xs font-lato">
+              <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                The Remnant
+              </p>
               <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
+              <p class="pl-4 border-l">1 min 20 sec</p>
             </div>
 
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
+            <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-            <p class="blog-paragraph">
+            <p class="text-[14px] md:text-base">
               Progressivism is not a church, but it represents a faith-like
               ideology of moral construct and moral judgement.
             </p>
 
-            <div class="blog-authors-group">
+            <div class="flex gap-3">
               <img
-                src="/src/images/icons/lock-fill.svg"
+                src="./src/images/icons/lock-fill.svg"
                 alt="padlock-icon"
                 width="18px"
                 height="18px"
               />
-              <p class="blog-authors-text">
+              <p class="font-bold text-sm font-lato">
                 Author's Name, Author's Name 2, and Author's Name 3
               </p>
             </div>
@@ -190,44 +196,44 @@
 
         <!-- BLOG 4 -->
         <article class="blog-card">
-          <div class="blog-img-wrapper">
+          <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
             <img
-              src="/src/images/articles/arrest-the-traitors.png"
+              src="./src/images/articles/arrest-the-traitors.png"
               alt="camera"
-              class="blog-img"
+              class="w-full h-full object-cover"
             />
 
             <img
-              src="/src/images/icons/podcast-icon.png"
+              src="./src/images/icons/podcast-icon.png"
               alt="podcast-icon"
               class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
             />
           </div>
 
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The Remnant</p>
+          <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+            <div class="flex items-center gap-4 text-xs font-lato">
+              <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                The Remnant
+              </p>
               <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
+              <p class="pl-4 border-l">1 min 20 sec</p>
             </div>
 
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
+            <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-            <p class="blog-paragraph">
+            <p class="text-[14px] md:text-base">
               Progressivism is not a church, but it represents a faith-like
               ideology of moral construct and moral judgement.
             </p>
 
-            <div class="blog-authors-group">
+            <div class="flex gap-3">
               <img
-                src="/src/images/icons/lock-fill.svg"
+                src="./src/images/icons/lock-fill.svg"
                 alt="padlock-icon"
                 width="18px"
                 height="18px"
               />
-              <p class="blog-authors-text">
+              <p class="font-bold text-sm font-lato">
                 Author's Name, Author's Name 2, and Author's Name 3
               </p>
             </div>
@@ -236,44 +242,44 @@
 
         <!-- BLOG 5 -->
         <article class="blog-card">
-          <div class="blog-img-wrapper">
+          <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
             <img
-              src="/src/images/articles/health-care.png"
+              src="./src/images/articles/health-care.png"
               alt="camera"
-              class="blog-img"
+              class="w-full h-full object-cover"
             />
 
             <img
-              src="/src/images/icons/podcast-icon.png"
+              src="./src/images/icons/podcast-icon.png"
               alt="podcast-icon"
               class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
             />
           </div>
 
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The Dispatch Podcast</p>
+          <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+            <div class="flex items-center gap-4 text-xs font-lato">
+              <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                The Dispatch Podcast
+              </p>
               <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
+              <p class="pl-4 border-l">1 min 20 sec</p>
             </div>
 
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
+            <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-            <p class="blog-paragraph">
+            <p class="text-[14px] md:text-base">
               Progressivism is not a church, but it represents a faith-like
               ideology of moral construct and moral judgement.
             </p>
 
-            <div class="blog-authors-group">
+            <div class="flex gap-3">
               <img
-                src="/src/images/icons/lock-fill.svg"
+                src="./src/images/icons/lock-fill.svg"
                 alt="padlock-icon"
                 width="18px"
                 height="18px"
               />
-              <p class="blog-authors-text">
+              <p class="font-bold text-sm font-lato">
                 Author's Name, Author's Name 2, and Author's Name 3
               </p>
             </div>
@@ -282,44 +288,44 @@
 
         <!-- BLOG 6 -->
         <article class="blog-card">
-          <div class="blog-img-wrapper">
+          <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
             <img
-              src="/src/images/articles/health-care.png"
+              src="./src/images/articles/health-care.png"
               alt="camera"
-              class="blog-img"
+              class="w-full h-full object-cover"
             />
 
             <img
-              src="/src/images/icons/podcast-icon.png"
+              src="./src/images/icons/podcast-icon.png"
               alt="podcast-icon"
               class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
             />
           </div>
 
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The Dispatch Podcast</p>
+          <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+            <div class="flex items-center gap-4 text-xs font-lato">
+              <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                The Dispatch Podcast
+              </p>
               <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
+              <p class="pl-4 border-l">1 min 20 sec</p>
             </div>
 
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
+            <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-            <p class="blog-paragraph">
+            <p class="text-[14px] md:text-base">
               Progressivism is not a church, but it represents a faith-like
               ideology of moral construct and moral judgement.
             </p>
 
-            <div class="blog-authors-group">
+            <div class="flex gap-3">
               <img
-                src="/src/images/icons/lock-fill.svg"
+                src="./src/images/icons/lock-fill.svg"
                 alt="padlock-icon"
                 width="18px"
                 height="18px"
               />
-              <p class="blog-authors-text">
+              <p class="font-bold text-sm font-lato">
                 Author's Name, Author's Name 2, and Author's Name 3
               </p>
             </div>
@@ -328,44 +334,44 @@
 
         <!-- BLOG 7 -->
         <article class="blog-card hidden" id="blog-7">
-          <div class="blog-img-wrapper">
+          <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
             <img
-              src="/src/images/articles/hikvision-camera.png"
+              src="./src/images/articles/hikvision-camera.png"
               alt="camera"
-              class="blog-img"
+              class="w-full h-full object-cover"
             />
 
             <img
-              src="/src/images/icons/podcast-icon.png"
+              src="./src/images/icons/podcast-icon.png"
               alt="podcast-icon"
               class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
             />
           </div>
 
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The Dispatch Podcast</p>
+          <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+            <div class="flex items-center gap-4 text-xs font-lato">
+              <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                The Dispatch Podcast
+              </p>
               <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
+              <p class="pl-4 border-l">1 min 20 sec</p>
             </div>
 
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
+            <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-            <p class="blog-paragraph">
+            <p class="text-[14px] md:text-base">
               Progressivism is not a church, but it represents a faith-like
               ideology of moral construct and moral judgement.
             </p>
 
-            <div class="blog-authors-group">
+            <div class="flex gap-3">
               <img
-                src="/src/images/icons/lock-fill.svg"
+                src="./src/images/icons/lock-fill.svg"
                 alt="padlock-icon"
                 width="18px"
                 height="18px"
               />
-              <p class="blog-authors-text">
+              <p class="font-bold text-sm font-lato">
                 Author's Name, Author's Name 2, and Author's Name 3
               </p>
             </div>
@@ -374,44 +380,44 @@
 
         <!-- BLOG 8 -->
         <article class="blog-card hidden" id="blog-8">
-          <div class="blog-img-wrapper">
+          <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
             <img
-              src="/src/images/articles/hikvision-camera.png"
+              src="./src/images/articles/hikvision-camera.png"
               alt="camera"
-              class="blog-img"
+              class="w-full h-full object-cover"
             />
 
             <img
-              src="/src/images/icons/podcast-icon.png"
+              src="./src/images/icons/podcast-icon.png"
               alt="podcast-icon"
               class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
             />
           </div>
 
-          <section class="blog-content">
-            <div class="blog-tag-and-date">
-              <p class="blog-tag">The Dispatch Podcast</p>
+          <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+            <div class="flex items-center gap-4 text-xs font-lato">
+              <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                The Dispatch Podcast
+              </p>
               <p>26 May 2022</p>
-              <p class="blog-read-time">1 min 20 sec</p>
+              <p class="pl-4 border-l">1 min 20 sec</p>
             </div>
 
-            <h2 class="blog-heading">
-              When Public Education Becomes Parochial
-            </h2>
+            <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-            <p class="blog-paragraph">
+            <p class="text-[14px] md:text-base">
               Progressivism is not a church, but it represents a faith-like
               ideology of moral construct and moral judgement.
             </p>
 
-            <div class="blog-authors-group">
+            <div class="flex gap-3">
               <img
-                src="/src/images/icons/lock-fill.svg"
+                src="./src/images/icons/lock-fill.svg"
                 alt="padlock-icon"
                 width="18px"
                 height="18px"
               />
-              <p class="blog-authors-text">
+              <p class="font-bold text-sm font-lato">
                 Author's Name, Author's Name 2, and Author's Name 3
               </p>
             </div>
@@ -419,7 +425,10 @@
         </article>
       </section>
       <div class="mb-4 pb-4 border-b" id="loadBtnDiv">
-        <button class="text-small ghost-btn px-4 mt-12" id="loadBtn">
+        <button
+          class="text-[14px] md:text-base bg-transparent px-2 text-blue-300 hover:bg-brand-iron-grey px-4 mt-12"
+          id="loadBtn"
+        >
           LOAD MORE
         </button>
       </div>

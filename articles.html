@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Articles Archive</title>
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="./dist/output.css" rel="stylesheet" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -13,8 +13,10 @@
         class="p-5 container flex border-l border-l-brand-iron-grey border-r border-r-brand-iron-grey"
       >
         <nav class="flex gap-6 w-full">
-          <button class="text-small ghost-btn px-1 flex items-center gap-4">
-            <img src="/src/images/icons/menu-line.svg" alt="menu-icon" />
+          <button
+            class="text-[14px] md:text-base bg-transparent px-2 text-blue-300 hover:bg-brand-iron-grey flex items-center gap-4"
+          >
+            <img src="./src/images/icons/menu-line.svg" alt="menu-icon" />
             Menu
           </button>
 
@@ -22,6 +24,8 @@
             src="src/images/icons/search-line.svg"
             alt="search-icon"
             class="cursor-pointer"
+            width="28px"
+            height="28px"
           />
         </nav>
       </section>
@@ -31,28 +35,36 @@
       <section class="pt-6 w-full flex flex-col justify-between">
         <h1 class="text-5xl mb-4">Articles</h1>
 
-        <section
-          class="flex flex-col w-full items-start md:items-center md:flex-row"
-        >
-          <p><i>Article</i>/The G-File</p>
-
-          <div class="self-center flex items-center gap-4 md:ml-auto">
-            <img
-              src="src/images/icons/search-line.svg"
-              alt="search-icon"
-              class="cursor-pointer"
+        <div class="w-full flex gap-4">
+          <form class="w-full flex">
+            <input
+              value="Article/The G-File"
+              class="mr-4 p-2 border rounded w-full hover:border-blue-100"
             />
+            <button type="submit" class="hover:bg-transparent px-0">
+              <img
+                src="src/images/icons/search-line.svg"
+                alt="search-icon"
+                class="cursor-pointer"
+                width="28px"
+                height="28px"
+              />
+            </button>
+          </form>
 
-            <button class="text-small ghost-btn px-1 flex items-center gap-4">
-              <img src="/src/images/icons/sort-icon.svg" alt="menu-icon" />
-              Sort
-            </button>
-            <button class="text-small ghost-btn px-1 flex items-center gap-4">
-              <img src="/src/images/icons/filter-3-line.svg" alt="menu-icon" />
-              Filter
-            </button>
-          </div>
-        </section>
+          <button
+            class="text-[14px] md:text-base bg-transparent px-2 text-blue-300 hover:bg-brand-iron-grey flex items-center gap-4"
+          >
+            <img src="./src/images/icons/sort-icon.svg" alt="menu-icon" />
+            Sort
+          </button>
+          <button
+            class="text-[14px] md:text-base bg-transparent px-2 text-blue-300 hover:bg-brand-iron-grey flex items-center gap-4"
+          >
+            <img src="./src/images/icons/filter-3-line.svg" alt="menu-icon" />
+            Filter
+          </button>
+        </div>
       </section>
 
       <section class="featured-blogs-grid w-full">
@@ -65,88 +77,90 @@
 
           <!-- BLOG 1 -->
           <article class="featured-card">
-            <div class="featured-img-wrapper">
+            <div class="relative w-full">
               <img
-                src="/src/images/articles/arrest-the-traitors-large.png"
+                src="./src/images/articles/arrest-the-traitors-large.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <!-- <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               /> -->
             </div>
 
-            <section class="featured-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 py-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
+              <h2 class="text-2xl">
                 Skilled Workers Are Fleeing Russia. Let’s Welcome Them.
               </h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Depriving Russia—and Belarus—of such workers would strike a blow
                 against our adversaries and strengthen our economy.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">Author's Name</p>
+                <p class="font-bold text-sm font-lato">Author's Name</p>
               </div>
             </section>
           </article>
 
           <!-- BLOG 2 -->
           <article class="blog-card">
-            <div class="blog-img-wrapper">
+            <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
               <img
-                src="/src/images/articles/hikvision-camera.png"
+                src="./src/images/articles/hikvision-camera.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               />
             </div>
 
-            <section class="blog-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
-                When Public Education Becomes Parochial
-              </h2>
+              <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Progressivism is not a church, but it represents a faith-like
                 ideology of moral construct and moral judgement.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">
+                <p class="font-bold text-sm font-lato">
                   Author's Name, Author's Name 2, and Author's Name 3
                 </p>
               </div>
@@ -155,44 +169,44 @@
 
           <!-- BLOG 3 -->
           <article class="blog-card">
-            <div class="blog-img-wrapper">
+            <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
               <img
-                src="/src/images/articles/hikvision-camera.png"
+                src="./src/images/articles/hikvision-camera.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <!-- <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               /> -->
             </div>
 
-            <section class="blog-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
-                When Public Education Becomes Parochial
-              </h2>
+              <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Progressivism is not a church, but it represents a faith-like
                 ideology of moral construct and moral judgement.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">
+                <p class="font-bold text-sm font-lato">
                   Author's Name, Author's Name 2, and Author's Name 3
                 </p>
               </div>
@@ -206,88 +220,90 @@
           -->
           <!-- BLOG 4 -->
           <article class="featured-card">
-            <div class="featured-img-wrapper">
+            <div class="relative w-full">
               <img
-                src="/src/images/articles/arrest-the-traitors-large.png"
+                src="./src/images/articles/arrest-the-traitors-large.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               />
             </div>
 
-            <section class="featured-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 py-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
+              <h2 class="text-2xl">
                 Skilled Workers Are Fleeing Russia. Let’s Welcome Them.
               </h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Depriving Russia—and Belarus—of such workers would strike a blow
                 against our adversaries and strengthen our economy.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">Author's Name</p>
+                <p class="font-bold text-sm font-lato">Author's Name</p>
               </div>
             </section>
           </article>
 
           <!-- BLOG 5 -->
           <article class="blog-card">
-            <div class="blog-img-wrapper">
+            <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
               <img
-                src="/src/images/articles/hikvision-camera.png"
+                src="./src/images/articles/hikvision-camera.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               />
             </div>
 
-            <section class="blog-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
-                When Public Education Becomes Parochial
-              </h2>
+              <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Progressivism is not a church, but it represents a faith-like
                 ideology of moral construct and moral judgement.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">
+                <p class="font-bold text-sm font-lato">
                   Author's Name, Author's Name 2, and Author's Name 3
                 </p>
               </div>
@@ -296,44 +312,44 @@
 
           <!-- BLOG 6 -->
           <article class="blog-card">
-            <div class="blog-img-wrapper">
+            <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
               <img
-                src="/src/images/articles/hikvision-camera.png"
+                src="./src/images/articles/hikvision-camera.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               />
             </div>
 
-            <section class="blog-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
-                When Public Education Becomes Parochial
-              </h2>
+              <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Progressivism is not a church, but it represents a faith-like
                 ideology of moral construct and moral judgement.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">
+                <p class="font-bold text-sm font-lato">
                   Author's Name, Author's Name 2, and Author's Name 3
                 </p>
               </div>
@@ -344,44 +360,44 @@
         <section class="blog-column-two">
           <!-- BLOG 1 -->
           <article class="blog-card">
-            <div class="blog-img-wrapper">
+            <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
               <img
-                src="/src/images/articles/hikvision-camera.png"
+                src="./src/images/articles/hikvision-camera.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <!-- <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               /> -->
             </div>
 
-            <section class="blog-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
-                When Public Education Becomes Parochial
-              </h2>
+              <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Progressivism is not a church, but it represents a faith-like
                 ideology of moral construct and moral judgement.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">
+                <p class="font-bold text-sm font-lato">
                   Author's Name, Author's Name 2, and Author's Name 3
                 </p>
               </div>
@@ -390,44 +406,44 @@
 
           <!-- BLOG 2 -->
           <article class="blog-card">
-            <div class="blog-img-wrapper">
+            <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
               <img
-                src="/src/images/articles/horse-race.png"
+                src="./src/images/articles/horse-race.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <!-- <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               /> -->
             </div>
 
-            <section class="blog-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
-                When Public Education Becomes Parochial
-              </h2>
+              <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Progressivism is not a church, but it represents a faith-like
                 ideology of moral construct and moral judgement.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">
+                <p class="font-bold text-sm font-lato">
                   Author's Name, Author's Name 2, and Author's Name 3
                 </p>
               </div>
@@ -436,44 +452,44 @@
 
           <!-- BLOG 3 -->
           <article class="blog-card">
-            <div class="blog-img-wrapper">
+            <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
               <img
-                src="/src/images/articles/health-care.png"
+                src="./src/images/articles/health-care.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <!-- <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               /> -->
             </div>
 
-            <section class="blog-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
-                When Public Education Becomes Parochial
-              </h2>
+              <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Progressivism is not a church, but it represents a faith-like
                 ideology of moral construct and moral judgement.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">
+                <p class="font-bold text-sm font-lato">
                   Author's Name, Author's Name 2, and Author's Name 3
                 </p>
               </div>
@@ -482,44 +498,44 @@
 
           <!-- BLOG 4 -->
           <article class="blog-card">
-            <div class="blog-img-wrapper">
+            <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
               <img
-                src="/src/images/articles/arrest-the-traitors.png"
+                src="./src/images/articles/arrest-the-traitors.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <!-- <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               /> -->
             </div>
 
-            <section class="blog-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
-                When Public Education Becomes Parochial
-              </h2>
+              <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Progressivism is not a church, but it represents a faith-like
                 ideology of moral construct and moral judgement.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">
+                <p class="font-bold text-sm font-lato">
                   Author's Name, Author's Name 2, and Author's Name 3
                 </p>
               </div>
@@ -528,44 +544,44 @@
 
           <!-- BLOG 5 -->
           <article class="blog-card">
-            <div class="blog-img-wrapper">
+            <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
               <img
-                src="/src/images/articles/hikvision-camera.png"
+                src="./src/images/articles/hikvision-camera.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <!-- <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               /> -->
             </div>
 
-            <section class="blog-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
-                When Public Education Becomes Parochial
-              </h2>
+              <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Progressivism is not a church, but it represents a faith-like
                 ideology of moral construct and moral judgement.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">
+                <p class="font-bold text-sm font-lato">
                   Author's Name, Author's Name 2, and Author's Name 3
                 </p>
               </div>
@@ -574,44 +590,44 @@
 
           <!-- BLOG 6 -->
           <article class="blog-card">
-            <div class="blog-img-wrapper">
+            <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
               <img
-                src="/src/images/articles/horse-race.png"
+                src="./src/images/articles/horse-race.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <!-- <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               /> -->
             </div>
 
-            <section class="blog-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
-                When Public Education Becomes Parochial
-              </h2>
+              <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Progressivism is not a church, but it represents a faith-like
                 ideology of moral construct and moral judgement.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">
+                <p class="font-bold text-sm font-lato">
                   Author's Name, Author's Name 2, and Author's Name 3
                 </p>
               </div>
@@ -620,44 +636,44 @@
 
           <!-- BLOG 7 -->
           <article class="blog-card">
-            <div class="blog-img-wrapper">
+            <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
               <img
-                src="/src/images/articles/health-care.png"
+                src="./src/images/articles/health-care.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <!-- <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               /> -->
             </div>
 
-            <section class="blog-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
-                When Public Education Becomes Parochial
-              </h2>
+              <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Progressivism is not a church, but it represents a faith-like
                 ideology of moral construct and moral judgement.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">
+                <p class="font-bold text-sm font-lato">
                   Author's Name, Author's Name 2, and Author's Name 3
                 </p>
               </div>
@@ -666,44 +682,44 @@
 
           <!-- BLOG 8 -->
           <article class="blog-card">
-            <div class="blog-img-wrapper">
+            <div class="relative w-full md:w-fit 2xl:w-full 2xl:max-w-228">
               <img
-                src="/src/images/articles/arrest-the-traitors.png"
+                src="./src/images/articles/arrest-the-traitors.png"
                 alt="camera"
-                class="blog-img"
+                class="w-full h-full object-cover"
               />
 
               <!-- <img
-                src="/src/images/icons/podcast-icon.png"
+                src="./src/images/icons/podcast-icon.png"
                 alt="podcast-icon"
                 class="absolute top-0 left-0 bg-black text-white p-2 md:p-1"
               /> -->
             </div>
 
-            <section class="blog-content">
-              <div class="blog-tag-and-date">
-                <p class="blog-tag">The G-File</p>
+            <section class="mt-4 flex flex-col gap-3 md:mt-0 md:px-4">
+              <div class="flex items-center gap-4 text-xs font-lato">
+                <p class="py-2 px-4 bg-red-300 text-white font-bold">
+                  The G-File
+                </p>
                 <p>26 May 2022</p>
-                <p class="blog-read-time">1 min 20 sec</p>
+                <p class="pl-4 border-l">1 min 20 sec</p>
               </div>
 
-              <h2 class="blog-heading">
-                When Public Education Becomes Parochial
-              </h2>
+              <h2 class="text-2xl">When Public Education Becomes Parochial</h2>
 
-              <p class="blog-paragraph">
+              <p class="text-[14px] md:text-base">
                 Progressivism is not a church, but it represents a faith-like
                 ideology of moral construct and moral judgement.
               </p>
 
-              <div class="blog-authors-group">
+              <div class="flex gap-3">
                 <img
-                  src="/src/images/icons/lock-fill.svg"
+                  src="./src/images/icons/lock-fill.svg"
                   alt="padlock-icon"
                   width="18px"
                   height="18px"
                 />
-                <p class="blog-authors-text">
+                <p class="font-bold text-sm font-lato">
                   Author's Name, Author's Name 2, and Author's Name 3
                 </p>
               </div>
@@ -712,7 +728,11 @@
         </section>
       </section>
       <div class="mb-4 pb-4 border-b">
-        <button class="text-small ghost-btn px-4 mt-12">LOAD MORE</button>
+        <button
+          class="text-[14px] md:text-base bg-transparent text-blue-300 hover:bg-brand-iron-grey px-4 mt-12"
+        >
+          LOAD MORE
+        </button>
       </div>
     </main>
   </body>
