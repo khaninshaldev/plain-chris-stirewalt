@@ -1378,6 +1378,11 @@ button:hover{
   color: rgb(43 71 114 / var(--tw-text-opacity));
 }
 
+.hover\:underline:hover{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .focus\:border-black:focus{
   --tw-border-opacity: 1;
   border-color: rgb(17 17 17 / var(--tw-border-opacity));
